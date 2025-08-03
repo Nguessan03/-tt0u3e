@@ -84,6 +84,7 @@ h6 {
   font-family: var(--heading-font);
 }
 
+
 /* Pulsating Play Button
 ------------------------------*/
 .pulsating-play-btn {
@@ -218,6 +219,28 @@ h6 {
 /*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
+/* CSS pour le message défilant - animation uniquement */
+.scrolling-banner {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.scrolling-text {
+    display: inline-block;
+    animation: scroll-left 20s linear infinite;
+}
+
+@keyframes scroll-left {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Pause au survol  */
+.scrolling-banner:hover .scrolling-text {
+    animation-play-state: paused;
+}
+
 .header {
   color: var(--default-color);
   transition: all 0.5s;
@@ -1018,6 +1041,7 @@ section,
 
 .hero .carousel-control-next-icon,
 .hero .carousel-control-prev-icon {
+  display: none !important;
   background: none;
   font-size: 32px;
   line-height: 1;
