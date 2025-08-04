@@ -1,8 +1,8 @@
 
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway",  sans-serif;
+  --default-font: "Poppins",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Poppins",  sans-serif;
   --nav-font: "Poppins",  sans-serif;
 }
 
@@ -228,43 +228,35 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 /* CSS pour le message défilant - animation uniquement */
-/* CSS pour l'effet machine à écrire en boucle (sans effacement) */
 .scrolling-banner {
     overflow: hidden;
-    position: relative;
+    white-space: nowrap;
+    width: 50%;
+    color: white;
+    padding: 10px 0;
 }
 
-
+.scrolling-text {
+    display: inline-block;
+    animation: scroll-left 20s linear infinite;
+}
 
 .scrolling-text h4 {
-    border-right: 2px solid currentColor;
-    white-space: nowrap;
-    overflow: hidden;
     margin: 0;
-    animation: typewriter-restart 6s steps(40, end) infinite, blink-caret 0.75s step-end infinite;
+    display: inline-block;
 }
 
-/* Animation : écriture + pause + recommence */
-@keyframes typewriter-restart {
-    0% { width: 0; }
-    50% { width: 100%; }
-    100% { width: 100%; }
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
-@keyframes blink-caret {
-    from, to { border-color: transparent; }
-    50% { border-color: currentColor; }
-}
-
-/* Version plus lente */
-.scrolling-text h2.slow {
-    animation: typewriter-restart-slow 8s steps(40, end) infinite, blink-caret 0.75s step-end infinite;
-}
-
-@keyframes typewriter-restart-slow {
-    0% { width: 0; }
-    40% { width: 100%; }
-    100% { width: 100%; }
+.scrolling-banner:hover .scrolling-text {
+    animation-play-state: paused;
 }
 
 .header {
@@ -641,9 +633,9 @@ span.formation{
 # Global Footer
 --------------------------------------------------------------*/
 .footer {
-  color: var(--default-color);
+  color: #25366D;
   background-color: rgba(9, 122, 60, 0.1);
-  font-size: 14px;
+  font-size: 16px;
   padding-bottom: 50px;
   position: relative;
 }
@@ -675,17 +667,16 @@ span.formation{
   font-size: 14px;
   font-family: var(--heading-font);
 }
-
-.footer .social-links a {
+.footer  i {
+  font-size: 22px;
+  color: #25366D;
+}
+.footer .social-links a{
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
-  font-size: 16px;
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  font-size: 22px;
+  color: #25366D;
   margin-right: 10px;
   transition: 0.3s;
 }
@@ -980,7 +971,7 @@ section,
 
 .hero .carousel {
   width: 100%;
-  min-height: 75vh;
+  min-height: 70vh;
   padding: 0;
   margin: 0;
   background-color: var(--background-color);
@@ -1034,6 +1025,9 @@ section,
 @media (max-width: 768px) {
   .hero h2 {
     font-size: 30px;
+  }
+  .formation-details{
+    width: 70% !important;
   }
 }
 
@@ -1466,6 +1460,9 @@ section,
   .portfolio .portfolio-filters li {
     font-size: 14px;
     margin: 0 5px;
+  }
+  .formation-details{
+    width: 70% !important;
   }
 }
 
