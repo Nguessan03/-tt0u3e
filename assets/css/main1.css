@@ -764,7 +764,6 @@ span.formation{
 .footer .copyright {
   padding-top: 25px;
   padding-bottom: 25px;
-  background-color: color-mix(in srgb, var(--default-color), transparent 95%);
 }
 
 .footer .copyright p {
@@ -776,6 +775,10 @@ span.formation{
   font-size: 13px;
 }
 
+.footer .credits a, .px-1.sitename{
+  font-weight: bold;
+  color: #25366D !important;
+}
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -930,6 +933,7 @@ section,
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 20px;
+  color: #25366D;
   padding-bottom: 20px;
   position: relative;
 }
