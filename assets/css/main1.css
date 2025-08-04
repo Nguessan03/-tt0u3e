@@ -223,7 +223,10 @@ h6 {
 /* CSS pour l'effet machine à écrire en boucle (sans effacement) */
 .scrolling-banner {
     overflow: hidden;
+    position: relative;
 }
+
+
 
 .scrolling-text h4 {
     border-right: 2px solid currentColor;
