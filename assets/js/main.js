@@ -208,3 +208,9 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+document.getElementById('formation-toggle').addEventListener('click', function(e) {
+    e.preventDefault();
+    const content = document.getElementById('formation-content');
+    content.classList.toggle('show');
+});

@@ -46,7 +46,7 @@
             <!-- <li><a href="#team">NOTRE EQUIPE</a></li>-->
             <li><a href="#services">NOS MISSIONS</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="#formation">Formation</a></li>
+            <li><a href="#formation"><span class="formation">Formation</span></a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
@@ -236,14 +236,6 @@
       </div>
     </div>
 
-    <!-- Formation -->
-    <div class="col-12 d-flex" data-aos="fade-up" data-aos-delay="700">
-      <div class="service-item position-relative d-flex align-items-center w-100">
-        <div class="icon me-3"><i class="bi bi-mortarboard icon"></i></div>
-        <h4><a href="" class="stretched-link">Formation</a></h4>
-      </div>
-    </div>
-
     <!-- Création d'entreprise -->
     <div class="col-12 d-flex" data-aos="fade-up" data-aos-delay="800">
       <div class="service-item position-relative d-flex align-items-center w-100">
@@ -259,6 +251,42 @@
         <h4><a href="" class="stretched-link">Conseil</a></h4>
       </div>
     </div>
+    <!-- Formation -->
+    <div class="col-12 d-flex" data-aos="fade-up" data-aos-delay="700">
+      <div class="service-item position-relative d-flex align-items-center w-100">
+        <div class="icon me-3"><i class="bi bi-mortarboard icon"></i></div>
+        <h4><a href="#" class="stretched-link" id="formation-toggle">Formation</a></h4>
+      </div>
+    </div>
+
+    <!-- Contenu Formation (caché par défaut) -->
+    <div class="formation-details" id="formation-content">
+      <div class="col-12 d-flex" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-item position-relative d-flex align-items-center w-100">
+          <h4>Fiscalité & Lois sociales</h4>
+        </div>
+      </div>
+      
+      <div class="col-12 d-flex" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-item position-relative d-flex align-items-center w-100">
+          <h4>Comptabilité</h4>
+        </div>
+      </div>
+      
+      <div class="col-12 d-flex" data-aos="fade-up" data-aos-delay="400">
+        <div class="service-item position-relative d-flex align-items-center w-100">
+          <h4>Gestion</h4>
+        </div>
+      </div>
+      
+      <div class="col-12 d-flex" data-aos="fade-up" data-aos-delay="500">
+        <div class="service-item position-relative d-flex align-items-center w-100">
+          <h4>Gestion de projet</h4>
+        </div>
+      </div>
+    </div>
+
+    </div>
 
       </div>
       </div>
@@ -266,45 +294,6 @@
 
     </section><!-- /Services Section -->
     
-    <!-- Portfolio Section -->
-    <section id="formation" class="portfolio section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>NOS FORMATIONS</h2>
-        <p>Nous proposons des formations pratiques et ciblées pour renforcer vos compétences dans les domaines clés de l’entreprise.</p>
-      </div><!-- End Section Title -->
-      
-      <div class="container">
-        <div class="row align-items-center">
-          
-          <!-- Colonne gauche -->
-          <div class="col-sm-6 col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item  item-blue text-center text-sm-right mb-4 icon-box">
-              <h4 class="sub-info">Fiscalité & Lois sociales</h4>
-            </div>
-
-            <div class="service-item  item-blue text-center text-sm-right mt-5 icon-box" data-aos="fade-up" data-aos-delay="200">
-              <h4 class="sub-info">Comptabilité</h4>
-            </div>
-          </div>
-
-          <!-- Colonne droite -->
-          <div class="col-sm-6 col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item  item-blue text-center text-sm-left mb-4 icon-box">
-              <h4 class="sub-info">Gestion</h4>
-            </div>
-
-            <div class="service-item  item-blue text-center text-sm-left mt-5 icon-box" data-aos="fade-up" data-aos-delay="200">
-              <h4 class="sub-info">Gestion de projet</h4>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section><!-- /Portfolio Section -->
-
-
     <!-- Contact Section -->
     <section id="contact" class="contact section">
 
@@ -400,9 +389,8 @@
             <img src="assets/img/logo.png"  height="200" width="auto" alt="">
         </div>
 
-        <div class="col-lg-3 col-6 footer-links">
-          <h4>Liens</h4>
-          <ul>
+        <div class="col-lg-3 col-6 col-md-6 footer-links">
+          <ul class="links-content">
             <li><a href="#hero" class="active">ACCUEIL</a></li>
             <li><a href="#about">A PROPOS</a></li>
            <!-- <li><a href="#team">NOTRE EQUIPE</a></li>-->
@@ -412,8 +400,7 @@
           </ul>
         </div>
 
-        <div class="col-lg-4 col-md-12 footer-contact text-center text-md-start">
-          <h4>Nous contacter</h4>
+        <div class="col-lg-4 col-6 col-md-6 footer-contact text-center text-md-start">
           <p>ABIDJAN PLATEAU,</p>
           <p>BP 6413 ABIDJAN 01 - Plateau rue du commerce, Immeuble Nassar & Gaddar 2è Etage.</p>
           <p class="mt-4"><strong>Telephone:</strong> <span>+2250767845514</span></p>
