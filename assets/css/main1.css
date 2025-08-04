@@ -68,7 +68,15 @@ a {
   text-decoration: none;
   transition: 0.3s;
 }
-
+h4 span.stretched-link{
+    color: var(--accent-color);
+  text-decoration: none;
+  transition: 0.3s;
+}
+h4 span.stretched-link:hover{
+  color: color-mix(in srgb, var(--accent-color), transparent 25%);
+  text-decoration: none;  
+}
 a:hover {
   color: color-mix(in srgb, var(--accent-color), transparent 25%);
   text-decoration: none;
