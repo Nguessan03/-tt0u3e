@@ -43,7 +43,7 @@
 
 
 .accent-background {
-  --background-color: #25366D;
+  --background-color: #0e0e86;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --surface-color: #80c792;
@@ -344,7 +344,7 @@ h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 span.formation{
-  background: #25366D;
+  background: #0e0e86;
   padding: 5px 10px;
   color: #ffffff !important;
 }
@@ -633,7 +633,7 @@ span.formation{
 # Global Footer
 --------------------------------------------------------------*/
 .footer {
-  color: #25366D;
+  color: #0e0e86;
   background-color: rgba(9, 122, 60, 0.1);
   font-size: 16px;
   padding-bottom: 50px;
@@ -669,14 +669,14 @@ span.formation{
 }
 .footer  i {
   font-size: 22px;
-  color: #25366D;
+  color: #0e0e86;
 }
 .footer .social-links a{
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 22px;
-  color: #25366D;
+  color: #0e0e86;
   margin-right: 10px;
   transition: 0.3s;
 }
@@ -714,7 +714,7 @@ span.formation{
   margin-bottom: 30px;
 }
 .footer .links-content{
-    border-right: 1px solid #25366D;
+    border-right: 1px solid #0e0e86;
 }
 .footer .footer-links ul {
   list-style: none;
@@ -768,7 +768,7 @@ span.formation{
 
 .footer .credits a, .px-1.sitename{
   font-weight: bold;
-  color: #25366D !important;
+  color: #0e0e86 !important;
 }
 /*--------------------------------------------------------------
 # Preloader
@@ -924,7 +924,7 @@ section,
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 20px;
-  color: #25366D;
+  color: #0e0e86;
   padding-bottom: 20px;
   position: relative;
 }
@@ -1150,7 +1150,7 @@ section,
 }
 
 .featured-services .service-item .icon i, .services .service-item .icon i {
-  color: #25366D;
+  color: #0e0e86;
   font-size: 36px;
   transition: 0.3s;
 }
@@ -1518,7 +1518,7 @@ section,
 --------------------------------------------------------------*/
 .team h3{
     font-weight: bold;
-    color: #25366D;
+    color: #0e0e86;
 }
 .team .member {
   background-color: var(--surface-color);
