@@ -25,20 +25,22 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
-  <link href="assets/css/main1.css" rel="stylesheet">
+  <link href="assets/css/main2.css" rel="stylesheet">
 </head>
 
 <body class="index-page">
 
-  <header id="header" class="header sticky-top">
 
+
+
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section accent-background">
     <div class="branding d-flex align-items-cente">
 
-      <div class="container position-relative d-flex align-items-center justify-content-between">
-        <a href="index.html" class="logo d-flex align-items-center">
-           <img src="assets/img/logo.png" class="img-fluid"  alt="">
-        </a>
-
+      <div class="container position-relative d-flex align-items-center justify-content-end">
         <nav id="navmenu" class="navmenu">
           <ul>
             <li><a href="#hero" class="active">ACCUEIL</a></li>
@@ -54,22 +56,11 @@
       </div>
 
     </div>
-
-  </header>
-
-  <main class="main">
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero section accent-background">
-
       <div id="hero-carousel" class="carousel slide">
 
         <div class="carousel-item active">
-          <img src="assets/img/hero-carousel/hero-carousel-1.jpg" alt="">
           <div class="carousel-container">
-            <div class="h2content" style="position: absolute; left:15%; top: -20px;">
-            <h2 class="w-100" >Conseil et expertise</h2>
-            </div>
+            <h2 class="text-start">Conseil et expertise</h2>
             <div class="scrolling-banner position-relative">
                 <div class="scrolling-text">
                   <h4>Vous écouter, comprendre et résoudre</h4> 
@@ -183,7 +174,6 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>NOS MISSION</h2>
-        <p>Découvrez l’ensemble des services que nous proposons pour accompagner votre activité avec rigueur et expertise.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -301,44 +291,12 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
-      <p>Vous avez une question, une demande spécifique ou souhaitez collaborer avec nous ? N’hésitez pas à nous écrire. Notre équipe vous répondra dans les plus brefs délais.</p>      </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-4">
 
-          <div class="col-lg-5">
-
-            <div class="info-wrap">
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h3>Adresse</h3>
-                  <p>ABIDJAN PLATEAU, BP 6413 ABIDJAN 01 - 
-                    Plateau rue du commerce, Immeuble Nassar & Gaddar 2è Etage</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                <i class="bi bi-telephone flex-shrink-0"></i>
-                <div>
-                  <h3>Telephone</h3>
-                  <p>+2250767845514</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                <i class="bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h3>Email</h3>
-                  <p>infos@attoubeeassocies.com</p>
-                </div>
-              </div><!-- End Info Item -->
-            <iframe style="border:0; width: 100%; height: 300px;"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.6610680056137!2d-4.019684926277394!3d5.315458036024291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1ebc64aeaaaab%3A0xc7a5ccd2b2ec8419!2sImmeuble%20Nassar!5e0!3m2!1sfr!2sci!4v1753572772423!5m2!1sfr!2sci" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
-            </div>
-          </div>
-
-          <div class="col-lg-7">
+          <div class="col-lg-127">
             <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
 
@@ -356,16 +314,12 @@
                 <div class="col-md-6">
                   <input type="tel" class="form-control" name="phone" id="phone-field" placeholder="TELEPHONE*" required="">
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-7">
                   <textarea class="form-control" name="message" rows="10" id="message-field" placeholder="MESSAGE*" required=""></textarea>
                 </div>
 
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Envoyer un message</button>
+                <div class="col-md-5 text-center">
+                  <button type="submit">Envoyer</button>
                 </div>
 
               </div>

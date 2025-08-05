@@ -369,11 +369,11 @@ span.formation{
 
   .navmenu a,
   .navmenu a:focus {
-    color: var(--nav-color);
+    color: #fff;
+    font-weight: bold;
     padding: 18px 15px;
     font-size: 16px;
     font-family: var(--nav-font);
-    font-weight: 400;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -387,12 +387,6 @@ span.formation{
     line-height: 0;
     margin-left: 5px;
     transition: 0.3s;
-  }
-
-  .navmenu li:hover>a,
-  .navmenu .active,
-  .navmenu .active:focus {
-    color: var(--nav-hover-color);
   }
 
   .navmenu .dropdown ul {
@@ -485,11 +479,11 @@ span.formation{
 
   .navmenu a,
   .navmenu a:focus {
-    color: var(--nav-dropdown-color);
+    color: #fff;
+    font-weight: bold;
     padding: 10px 20px;
     font-family: var(--nav-font);
     font-size: 17px;
-    font-weight: 500;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -512,71 +506,6 @@ span.formation{
     background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
   }
 
-  .navmenu a i:hover,
-  .navmenu a:focus i:hover {
-    background-color: var(--accent-color);
-    color: var(--contrast-color);
-  }
-
-  .navmenu a:hover,
-  .navmenu .active,
-  .navmenu .active:focus {
-    color: var(--nav-dropdown-hover-color);
-  }
-
-  .navmenu .active i,
-  .navmenu .active:focus i {
-    background-color: var(--accent-color);
-    color: var(--contrast-color);
-    transform: rotate(180deg);
-  }
-
-  .navmenu .dropdown ul {
-    position: static;
-    display: none;
-    z-index: 99;
-    padding: 10px 0;
-    margin: 10px 20px;
-    background-color: var(--nav-dropdown-background-color);
-    border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-    box-shadow: none;
-    transition: all 0.5s ease-in-out;
-  }
-
-  .navmenu .dropdown ul ul {
-    background-color: rgba(33, 37, 41, 0.1);
-  }
-
-  .navmenu .dropdown>.dropdown-active {
-    display: block;
-    background-color: rgba(33, 37, 41, 0.03);
-  }
-
-  .mobile-nav-active {
-    overflow: hidden;
-  }
-
-  .mobile-nav-active .mobile-nav-toggle {
-    color: #fff;
-    position: absolute;
-    font-size: 32px;
-    top: 15px;
-    right: 15px;
-    margin-right: 0;
-    z-index: 9999;
-  }
-
-  .mobile-nav-active .navmenu {
-    position: fixed;
-    overflow: hidden;
-    inset: 0;
-    background: rgba(33, 37, 41, 0.8);
-    transition: 0.3s;
-  }
-
-  .mobile-nav-active .navmenu>ul {
-    display: block;
-  }
 }
 
 /*--------------------------------------------------------------
@@ -924,6 +853,7 @@ section,
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 20px;
+  text-align: left;
   color: #25366D;
   padding-bottom: 20px;
   position: relative;
@@ -962,11 +892,55 @@ section,
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+
+.navmenu ul li a {
+   position: relative;
+   text-decoration: none;
+   padding-bottom: 3px;
+}
+
+.navmenu ul li:not(:last-child) a::after {
+   content: '';
+   position: absolute;
+   bottom: -5px;
+   left: 0;
+   right: -20px;
+   height: 1px;
+   background-color: white;
+}
+
 .carousel-indicators{
   display: none !important;
 }
 .hero {
   padding: 0;
+}
+#hero {
+   background-image: url('../img/hero-carousel/hero-carousel-1.jpg');
+   background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+}
+
+#hero {
+   position: relative;
+}
+
+#hero::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 204, 0.7);
+   z-index: 1;
+   pointer-events: none;
+}
+
+#hero > * {
+   position: relative;
+   z-index: 2;
 }
 
 .hero .carousel {
@@ -974,7 +948,6 @@ section,
   min-height: 70vh;
   padding: 0;
   margin: 0;
-  background-color: var(--background-color);
   position: relative;
 }
 
@@ -999,7 +972,6 @@ section,
 
 .hero .carousel-item:before {
   content: "";
-  background: rgba(0, 0, 204, 0.7);
   position: absolute;
   inset: 0;
   z-index: 2;
